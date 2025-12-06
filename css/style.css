@@ -16,14 +16,20 @@ body {
 
   background: linear-gradient(
     90deg,
-    #7a2d2d,
-    #7a512d,
-    #7a7a2d,
-    #2d7a2d,
-    #2d7a7a,
-    #2d2d7a,
-    #5b2d7a
+    #b86f6f,
+    #b8906f,
+    #b8b86f,
+    #6fb86f,
+    #6fb8b8,
+    #6f6fb8,
+    #9a6fb8
   );
+
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
   color: #fff;
   position: sticky;
