@@ -127,7 +127,17 @@ body {
 }
 
 
-}
+<style>
+  /* Paragraphs OUTSIDE the box */
+  .body-text {
+    font-size: 1.15rem;
+    padding-left: 2rem;   /* indent from left edge */
+    color: #e6e6e6;
+    max-width: 900px;     /* keeps lines readable */
+    margin: 1rem auto;    /* centres the block nicely */
+  }
+</style>
+
 
 
 
