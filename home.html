@@ -83,35 +83,51 @@ body {
   padding: 2rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  
+</style>
+
+/* PAGE BACKGROUND COLOUR */
+body {
+  background: #111;
+  margin: 0;
+}
+
+/* MAIN HOMEPAGE AREA */
+.homepage-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px); /* below the nav bar */
+  padding: 2rem;
+
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  /* watermark effect */
+  color: white;
+}
+
+/* WATERMARK BACKGROUND LAYER */
+.homepage-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;  /* top:0; right:0; bottom:0; left:0 */
   background-image: url("data/pinkfloyd.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-  opacity: 0.15;
+  opacity: 0.2;         /* controls how faint the watermark is */
+  z-index: -1;          /* keeps it behind the text */
 }
 
-/* Foreground content sits ABOVE the watermark */
-.homepage-foreground {
-  position: absolute;
-  text-align: center;
-  padding: 2rem;
-  color: white;
-}
-
-/* Title styling */
+/* TITLE STYLING */
 .main-title {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+  margin: 0;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
-
-</style>
 
 
 </style>
