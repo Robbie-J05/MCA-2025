@@ -1,4 +1,4 @@
-/* GLOBAL PAGE STYLE (DARK MODE) */
+
 body {
   background: #111;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAVIGATION BAR — SOFTER DARK RAINBOW */
+/* NAVIGATION BAR */
 .main-nav {
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ body {
   color: #fff;
 }
 
-/* NAV LINKS */
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -62,21 +62,19 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Hover effect */
 .nav-links a:hover,
 .nav-links a:focus {
   background-color: #fff;
   color: #222;
 }
 
-/* Highlight current page */
 .nav-links a.current-page {
   background-color: #ffcc00;
   color: #222;
   font-weight: bold;
 }
 
-/* Mobile-friendly nav */
+
 @media (max-width: 600px) {
   .main-nav {
     flex-direction: column;
@@ -111,7 +109,11 @@ body {
   margin-bottom: 1rem;
   display: block;
   color: #e6e6e6;
+  font-size: 1.15rem;  
+  padding-left: 1rem;  
+  text-indent: 1rem;   
 }
+
 
 .week-image {
   display: block;
