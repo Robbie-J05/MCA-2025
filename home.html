@@ -1,119 +1,99 @@
 
 <style>
   
- 
-/* HOMEPAGE STYLING */
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-.home-container {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-  animation: fadeIn 0.8s ease;
-}
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    background-color: #222;
+    color: #fff;
+    position: sticky;  
+    top: 0;
+    z-index: 100;
+  }
 
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #6a5acd, #483d8b);
-  color: white;
-  border-radius: 20px;
-  margin-bottom: 3rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
+  .nav-logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+  }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 
-.subtitle {
-  opacity: 0.9;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
 
-.cta-btn {
-  display: inline-block;
-  background: white;
-  color: #483d8b;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #fff;
+    color: #222;
+  }
 
-.cta-btn:hover {
-  background: #f0eaff;
-  transform: translateY(-3px);
-}
+  .nav-links a.current-page {
+    background-color: #ffcc00;
+    color: #222;
+    font-weight: bold;
+  }
 
-.lab-grid {
-  text-align: center;
-}
 
-.lab-grid h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
+  @media (max-width: 600px) {
+    .main-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-}
-
-.lab-card {
-  background: #f8f8ff;
-  padding: 1.2rem;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #2c2c54;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.2s ease;
-  border: 2px solid transparent;
-}
-
-.lab-card:hover {
-  transform: translateY(-5px);
-  border-color: #6a5acd;
-  background: white;
-}
-
-/* Smooth fade-in animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+</style>
 
 
 </style>
 
 <body>
-<main class="home-container">
-  <section class="hero">
-    <h1>Welcome to My Web Development Lab Portfolio</h1>
-    <p class="subtitle">Labs 1–5 and 7–10 • Creative, Reflective, and Fully Documented</p>
 
-    <a href="lab1.html" class="cta-btn">Start with Lab 1</a>
-  </section>
+  <!-- NAVIGATION BAR -->
+<header>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">My Lab Portfolio</a>
 
-  <section class="lab-grid">
-    <h2>Explore the Labs</h2>
-    <div class="grid">
-      <a href="lab1.html" class="lab-card">Lab 1</a>
-      <a href="lab2.html" class="lab-card">Lab 2</a>
-      <a href="lab3.html" class="lab-card">Lab 3</a>
-      <a href="lab4.html" class="lab-card">Lab 4</a>
-      <a href="lab5.html" class="lab-card">Lab 5</a>
-      <a href="lab7.html" class="lab-card">Lab 7</a>
-      <a href="lab8.html" class="lab-card">Lab 8</a>
-      <a href="lab9.html" class="lab-card">Lab 9</a>
-      <a href="lab10.html" class="lab-card">Lab 10</a>
-    </div>
-  </section>
-</main>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="week1.html">Week 1</a></li>
+      <li><a href="week2.html">Week 2</a></li>
+      <li><a href="week3.html">Week 3</a></li>
+      <li><a href="week4.html">Week 4</a></li>
+      <li><a href="week5.html">Week 5</a></li>
+      <li><a href="week6.html">Week 6</a></li>
+      <li><a href="week7.html">Week 7</a></li>
+      <li><a href="week8.html">Week 8</a></li>
+      <li><a href="week9.html">Week 9</a></li>
+    </ul>
+  </nav>
+</header>
 
 
 </body>
