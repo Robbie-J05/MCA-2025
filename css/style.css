@@ -18,17 +18,22 @@ body {
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
 
-  /* darker / more muted rainbow gradient */
   background: linear-gradient(
     90deg,
-    #4d0000,
-    #4d2600,
-    #4d4d00,
-    #004d00,
-    #004d4d,
-    #00004d,
-    #2b004d
+    #7a2d2d,
+    #7a512d,
+    #7a7a2d,
+    #2d7a2d,
+    #2d7a7a,
+    #2d2d7a,
+    #5b2d7a
   );
+
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
   color: #fff;
   position: sticky;
