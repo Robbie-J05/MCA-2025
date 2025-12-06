@@ -1,17 +1,13 @@
-/* =========================================
-   GLOBAL PAGE STYLE (DARK MODE)
-========================================= */
+/* GLOBAL PAGE STYLE (DARK MODE) */
 body {
-  background: #111;              /* dark background */
+  background: #111;
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #f2f2f2;                /* light text */
+  color: #f2f2f2;
   line-height: 1.6;
 }
 
-/* =========================================
-   NAVIGATION BAR — MUTED RAINBOW
-========================================= */
+/* NAVIGATION BAR — SOFTER DARK RAINBOW */
 .main-nav {
   display: flex;
   align-items: center;
@@ -28,12 +24,6 @@ body {
     #2d2d7a,
     #5b2d7a
   );
-
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 
   color: #fff;
   position: sticky;
@@ -94,19 +84,16 @@ body {
   }
 }
 
-/* =========================================
-   WEEK PAGE LAYOUT
-========================================= */
+/* WEEK PAGE LAYOUT */
 .week-page {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #1b1b1b;           /* slightly lighter than page */
+  background: #1b1b1b;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
 
-/* Week page heading */
 .page-title {
   text-align: center;
   font-size: 2rem;
@@ -114,14 +101,12 @@ body {
   color: #ffffff;
 }
 
-/* Paragraphs */
 .week-page p {
   margin-bottom: 1rem;
   display: block;
   color: #e6e6e6;
 }
 
-/* Images inside weeks (if you add them) */
 .week-image {
   display: block;
   max-width: 100%;
@@ -129,6 +114,9 @@ body {
   border-radius: 8px;
   border: 2px solid #333;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+
 }
 
 
