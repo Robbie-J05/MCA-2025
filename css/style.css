@@ -1,20 +1,33 @@
-/* FULL RAINBOW NAVIGATION BAR */
+/* =========================================
+   GLOBAL PAGE STYLE (DARK MODE)
+========================================= */
+body {
+  background: #111;              /* dark background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f2f2f2;                /* light text */
+  line-height: 1.6;
+}
+
+/* =========================================
+   NAVIGATION BAR — MUTED RAINBOW
+========================================= */
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
 
-  /* Rainbow gradient background */
+  /* darker / more muted rainbow gradient */
   background: linear-gradient(
     90deg,
-    #ff0000,
-    #ff7f00,
-    #ffff00,
-    #00ff00,
-    #00ffff,
-    #0000ff,
-    #8b00ff
+    #4d0000,
+    #4d2600,
+    #4d4d00,
+    #004d00,
+    #004d4d,
+    #00004d,
+    #2b004d
   );
 
   color: #fff;
@@ -76,21 +89,14 @@
   }
 }
 
-/* DARK PAGE BACKGROUND */
-body {
-  background: #111;        /* dark charcoal */
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #f2f2f2;          /* light text */
-  line-height: 1.6;
-}
-
-/* WEEK PAGE LAYOUT */
+/* =========================================
+   WEEK PAGE LAYOUT
+========================================= */
 .week-page {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #1b1b1b;     /* slightly lighter than body */
+  background: #1b1b1b;           /* slightly lighter than page */
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
@@ -103,12 +109,23 @@ body {
   color: #ffffff;
 }
 
-/* Paragraphs inside week pages */
+/* Paragraphs */
 .week-page p {
   margin-bottom: 1rem;
   display: block;
-  color: #e6e6e6;          /* softer white for reading */
+  color: #e6e6e6;
 }
+
+/* Images inside weeks (if you add them) */
+.week-image {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 8px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
 
 
 
