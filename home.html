@@ -67,6 +67,50 @@
       justify-content: flex-start;
     }
   }
+
+  /* Body background colour (fallback behind watermark) */
+body {
+  background: #111;
+  margin: 0;
+}
+
+/* Main content area with watermark image */
+.homepage-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px); /* fill the page under the nav */
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* watermark effect */
+  background-image: url("data/pinkfloyd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  opacity: 0.15;
+}
+
+/* Foreground content sits ABOVE the watermark */
+.homepage-foreground {
+  position: absolute;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Title styling */
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
 </style>
 
 
@@ -98,10 +142,6 @@
 
   <h2 class="main-title">My MCA-2025 Portfolio</h2>
 
-  <div class="image-container">
-    <!-- Replace pinkfloyd.jpg with your actual file name -->
-    <img src="data/pinkfloyd.jpeg" alt="Pink Floyd Graphic" class="homepage-image">
-  </div>
 
 </main>
 
