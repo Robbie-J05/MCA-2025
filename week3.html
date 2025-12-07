@@ -43,7 +43,71 @@
     <h1 class="page-title">Week 3</h1>
   </main>
 
-  <p class="body-text"></p>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+    <!-- Version 1.0 -->
+<head>
+    <meta charset="utf-8">
+    <title>My Piece in Verovio</title>
+    <style>
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .box {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+    .box .header {
+       flex: 0 1 auto;
+    }
+    .box #app {
+        flex: 1 1 auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="header"><h1>Week 3</h1>
+       <h2>key differences: Musicxml VS MEI</h2>
+        <p class="body-text"> 1. the first notable difference is that MEI uses "XML ID" for every note that gives it a clear name and corresponding data to identify that particular note. music XML contains informational
+        data by telling us exaclty where on the page the note is via the use of pixels but this is very hard to understand as a human reading the code</p>
+        <p class="body-class"> 2. Another difference is the layout, MEI uses a more layered system where each note gets divided up with a hierarchical format that makes informationa little
+        easier to read for humans. Music XML does not use this system and instead ops for a more traditional coding format that uses more open and closing tags to present information.</p>
+        <p class="body-class"> 3. MEI can detect chords as a whole and has its own "chord" node that XML does not. this provides more recognisable data for humans
+        as the language is more catered to those who are musically informed and can regonise keywords and navigate where the code is in relation to the score</p>
+    </div>
+    <div id="app">Verovio is loading...</div>
+    <script type="module">
+        import 'https://www.verovio.org/javascript/app/verovio-app.js';
+        
+        const options = {
+            defaultView: 'responsive', // default is 'responsive', alternative is 'document'
+            defaultZoom: 3, // 0-7, default is 4
+            enableResponsive: true, // default is true
+            enableDocument: true // default is true
+        }
+        
+        // A MusicXML file
+        var file = 'data/28270411.mei'; //Replace this with your own MEI file, but remember that JavaScript is case sensitive!
+        // A MEI file
+        //var file = 'https://www.verovio.org/editor/brahms.mei';
+        
+        const app = new Verovio.App(document.getElementById("app"), options);
+        fetch(file)
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(text) {
+                app.loadData(text);
+            });
+    </script>
+    </div>  
+  </p> 
 
 </body>
 </html>
