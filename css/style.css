@@ -138,6 +138,35 @@ body {
   }
 </style>
 
+.data-table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1200px;
+  color: #e6e6e6;
+  font-size: 1.05rem;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #444;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.data-table tr:nth-child(odd) {
+  background-color: #141414;
+}
 
 
 
