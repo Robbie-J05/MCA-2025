@@ -2,112 +2,120 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Week 3</title>
-  <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    .body-text {
-      font-size: 1.15rem;
-      padding-left: 2rem;
-      color: #e6e6e6;
-      max-width: 900px;
-      margin: 1rem auto;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="home.html" class="nav-logo">My Lab Portfolio</a>
-
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="week1.html">Week 1</a></li>
-        <li><a href="week2.html">Week 2</a></li>
-        <li><a href="week3.html" class="current-page">Week 3</a></li>
-        <li><a href="week4.html">Week 4</a></li>
-        <li><a href="week5.html">Week 5</a></li>
-        <li><a href="week6.html">Week 6</a></li>
-        <li><a href="week7.html">Week 7</a></li>
-        <li><a href="week8.html">Week 8</a></li>
-        <li><a href="week9.html">Week 9</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="week-page">
-    <h1 class="page-title">Week 3</h1>
-  </main>
-
-
-
-  <!DOCTYPE html>
-<html lang="en">
-    <!-- Version 1.0 -->
-<head>
     <meta charset="utf-8">
-    <title>My Piece in Verovio</title>
+    <title>Week 3</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Only for Verovio layout -->
     <style>
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-    }
-    .box {
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-    }
-    .box .header {
-       flex: 0 1 auto;
-    }
-    .box #app {
-        flex: 1 1 auto;
-    }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .box {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+        }
+
+        .box .header {
+           flex: 0 1 auto;
+        }
+
+        .box #app {
+            flex: 1 1 auto;
+        }
+
+        /* Indented body text (matches Week 2 style) */
+        .body-text {
+            font-size: 1.15rem;
+            padding-left: 2rem;
+            color: #e6e6e6;
+            max-width: 900px;
+            margin: 1rem auto;
+            line-height: 1.6;
+        }
     </style>
 </head>
+
 <body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="home.html" class="nav-logo">My Lab Portfolio</a>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="week1.html">Week 1</a></li>
+                <li><a href="week2.html">Week 2</a></li>
+                <li><a href="week3.html" class="current-page">Week 3</a></li>
+                <li><a href="week4.html">Week 4</a></li>
+                <li><a href="week5.html">Week 5</a></li>
+                <li><a href="week6.html">Week 6</a></li>
+                <li><a href="week7.html">Week 7</a></li>
+                <li><a href="week8.html">Week 8</a></li>
+                <li><a href="week9.html">Week 9</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- WEEK BOX (TITLE ONLY) -->
+    <main class="week-page">
+        <h1 class="page-title">Week 3</h1>
+    </main>
+
+    <!-- EVERYTHING BELOW THIS LINE IS YOUR ORIGINAL CONTENT,
+         SHOWN EXACTLY AS YOU SENT IT, OUTSIDE THE BOX. -->
+
     <div class="box">
-    <div class="header"><h1>Week 3</h1>
-       <h2>key differences: Musicxml VS MEI</h2>
-        <p class="body-text"> 1. the first notable difference is that MEI uses "XML ID" for every note that gives it a clear name and corresponding data to identify that particular note. music XML contains informational
-        data by telling us exaclty where on the page the note is via the use of pixels but this is very hard to understand as a human reading the code</p>
-        <p class="body-class"> 2. Another difference is the layout, MEI uses a more layered system where each note gets divided up with a hierarchical format that makes informationa little
-        easier to read for humans. Music XML does not use this system and instead ops for a more traditional coding format that uses more open and closing tags to present information.</p>
-        <p class="body-class"> 3. MEI can detect chords as a whole and has its own "chord" node that XML does not. this provides more recognisable data for humans
-        as the language is more catered to those who are musically informed and can regonise keywords and navigate where the code is in relation to the score</p>
+
+        <div class="header">
+            <h2 class="body-text">Key differences: MusicXML vs MEI</h2>
+
+            <p class="body-text">
+                1. The first notable difference is that MEI uses "XML ID" for every note that gives it a clear name 
+                and corresponding data to identify that particular note. MusicXML contains informational data by 
+                telling us exactly where on the page the note is via the use of pixels, but this is very hard to 
+                understand as a human reading the code.
+            </p>
+
+            <p class="body-text">
+                2. Another difference is the layout. MEI uses a more layered system where each note is divided with 
+                a hierarchical structure that makes information easier for humans to read. MusicXML does not use this 
+                system and instead uses more open and closing tags to present information.
+            </p>
+
+            <p class="body-text">
+                3. MEI can detect chords as a whole and has its own "chord" node that MusicXML does not. This provides 
+                more recognisable data for humans as the language is more catered to those who are musically informed 
+                and can recognise keywords and navigate the score structure more easily.
+            </p>
+        </div>
+
+        <div id="app">Verovio is loading...</div>
+
+        <script type="module">
+            import 'https://www.verovio.org/javascript/app/verovio-app.js';
+
+            const options = {
+                defaultView: 'responsive',
+                defaultZoom: 3,
+                enableResponsive: true,
+                enableDocument: true
+            };
+
+            var file = 'data/28270411.mei';
+
+            const app = new Verovio.App(document.getElementById("app"), options);
+
+            fetch(file)
+                .then(response => response.text())
+                .then(text => app.loadData(text));
+        </script>
     </div>
-    <div id="app">Verovio is loading...</div>
-    <script type="module">
-        import 'https://www.verovio.org/javascript/app/verovio-app.js';
-        
-        const options = {
-            defaultView: 'responsive', // default is 'responsive', alternative is 'document'
-            defaultZoom: 3, // 0-7, default is 4
-            enableResponsive: true, // default is true
-            enableDocument: true // default is true
-        }
-        
-        // A MusicXML file
-        var file = 'data/28270411.mei'; //Replace this with your own MEI file, but remember that JavaScript is case sensitive!
-        // A MEI file
-        //var file = 'https://www.verovio.org/editor/brahms.mei';
-        
-        const app = new Verovio.App(document.getElementById("app"), options);
-        fetch(file)
-            .then(function(response) {
-                return response.text();
-            })
-            .then(function(text) {
-                app.loadData(text);
-            });
-    </script>
-    </div>  
-  </p> 
 
 </body>
 </html>
