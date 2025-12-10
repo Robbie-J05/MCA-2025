@@ -8,8 +8,8 @@
             <title type="main">money</title>
             <title type="subordinate">Subtitle</title>
             <respStmt>
-               <persName role="composer" auth.uri="https://musicbrainz.org/artist/0f50beab-d77d-4f0f-ac26-0b87d3e9b11b" auth="Music Brainz">Roger Waters</persName>
-               <persName role="Artist" auth.uri="https://musicbrainz.org/artist/83d91898-7763-47d7-b03b-b92132375c47" auth="Music Brainz">Pink Floyd</persName>
+               <persName role="composer" authURI="https://musicbrainz.org/artist/0f50beab-d77d-4f0f-ac26-0b87d3e9b11b" authority="Music Brainz">Roger Waters</persName>
+               <persName role="Artist">Pink Floyd</persName>
                <persName role="encoder">Robbie Allan</persName>
                <corpName role="publisher">Harvest</corpName>
                <persName role="producer">David Gilmour</persName>
