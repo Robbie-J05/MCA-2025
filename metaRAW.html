@@ -9,8 +9,7 @@
 </head>
 <body>
   <div id="MEImeta"></div>
-<div id="MEImeta"></div>
-<div id="TEI"></div>          
+<div id="MEImeta"></div>         
 <div id="MEI"></div>          
 <div id="app" class="panel" style="border: 1px solid lightgray; min-height: 800px;">
 <div id="app" class="panel" style="border: 1px solid lightgray; height: 600px; margin: 1rem auto;">
@@ -32,10 +31,8 @@
         });
     </script>
   <script>
-    // Get, parse, and show TEI data
-    var CETEIcean = new CETEI()
-    CETEIcean.getHTML5("data/Money week 5b.mei", function(data) {
-      document.getElementById("TEI").appendChild(data)
+  
+    
     })
     // Get, parse and show MEI header data
     var CETEI4MEI = new CETEI()
