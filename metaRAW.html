@@ -3,7 +3,6 @@
   <head>
     <title>My Piece</title>
     <meta charset="utf-8">
-    <!-- Make sure this file name and path are correct -->
     <link rel="stylesheet" href="css/myMETA.css" media="all" />
     <link rel="stylesheet" href="css/style.css" media="all" />
     <script src="js/CETEI.js"></script>
@@ -13,7 +12,7 @@
     <!-- Metadata box -->
     <div id="MEImeta"></div>
 
-    <!-- Verovio app container (only one!) -->
+    
     <div id="app" class="panel"
          style="border: 1px solid lightgray; height: 600px; margin: 1rem auto;">
       Verovio is loading...
@@ -27,10 +26,10 @@
 
       const app = new Verovio.App(
         document.getElementById("app"),
-        {} // keep empty for now; you can add options later
+        {} 
       );
 
-      // Load the MEI file (for Verovio)
+   
       fetch("data/Money week 5b.mei")
         .then(function(response) {
           return response.text();
@@ -40,9 +39,8 @@
         });
     </script>
 
-    <!-- CETEI for MEI metadata -->
     <script>
-      // Get, parse and show MEI header data
+     
       var CETEI4MEI = new CETEI();
       CETEI4MEI.addBehaviors({
         namespaces: {
