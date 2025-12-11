@@ -1,0 +1,73 @@
+
+#MEImeta {
+  margin: 1rem 0;
+  font-family: sans-serif;
+  font-size: 0.95rem;
+}
+
+mei-meihead {
+  display: block;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+mei-titlestmt {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+
+mei-title {
+  display: block;
+  margin: 0;
+}
+
+mei-title[type="main"] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+mei-title[type="subordinate"] {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+mei-respstmt {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+mei-persname,
+mei-corpname {
+  display: block;
+  margin-left: 1rem;
+}
+
+mei-persname[role]::before,
+mei-corpname[role]::before {
+  content: attr(role) ": ";
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+
+mei-pubstmt {
+  display: block;
+  margin-top: 0.5rem;
+  border-top: 1px solid #ddd;
+  padding-top: 0.4rem;
+}
+
+mei-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+mei-date[isodate]::before {
+  content: "Date: ";
+  font-weight: bold;
+}
