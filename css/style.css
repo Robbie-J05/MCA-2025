@@ -33,11 +33,6 @@ body {
   z-index: 100;
 }
 
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 
 /* NAV LOGO */
 .nav-logo {
@@ -127,16 +122,16 @@ body {
 }
 
 
-<style>
+
   /* Paragraphs OUTSIDE the box */
   .body-text {
     font-size: 1.15rem;
-    padding-left: 2rem;   /* indent from left edge */
+    padding-left: 2rem;  
     color: #e6e6e6;
-    max-width: 900px;     /* keeps lines readable */
-    margin: 1rem auto;    /* centres the block nicely */
+    max-width: 900px;     
+    margin: 1rem auto;   
   }
-</style>
+
 
 .data-table {
   margin: 2rem auto;
