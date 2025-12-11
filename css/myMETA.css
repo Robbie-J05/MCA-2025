@@ -71,3 +71,57 @@ mei-date[isodate]::before {
   content: "Date: ";
   font-weight: bold;
 }
+/* Make all metadata text readable */
+#MEImeta {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Force all text inside MEImeta to be dark and visible */
+#MEImeta,
+#MEImeta * {
+  color: #111 !important;
+  font-size: 0.95rem;
+}
+
+/* Titles */
+#MEImeta mei-title[type="main"] {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.1rem;
+}
+
+#MEImeta mei-title[type="subordinate"] {
+  display: block;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+/* Roles */
+#MEImeta mei-persname,
+#MEImeta mei-corpname {
+  display: block;
+  margin-left: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+#MEImeta mei-persname[role]::before,
+#MEImeta mei-corpname[role]::before {
+  content: attr(role) ": ";
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Date */
+#MEImeta mei-date {
+  display: block;
+  margin-top: 0.4rem;
+}
+
+#MEImeta mei-date[isodate]::before {
+  content: "Date: ";
+  font-weight: 600;
+}
