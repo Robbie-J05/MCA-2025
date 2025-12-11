@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Version 1.0 -->
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Week 7</title>
-  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" href="css/myMETA.css" media="all" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+
+  <script src="js/CETEI.js"></script>
+
 
   <style>
     .body-text {
@@ -20,6 +27,7 @@
 
 <body>
 
+
   <header>
     <nav class="main-nav" aria-label="Main navigation">
       <a href="home.html" class="nav-logo">My Lab Portfolio</a>
@@ -30,18 +38,82 @@
         <li><a href="week2.html">Week 2</a></li>
         <li><a href="week3.html">Week 3</a></li>
         <li><a href="week4.html">Week 4</a></li>
-        <li><a href="week5.html" >Week 5</a></li>
+        <li><a href="week5.html">Week 5</a></li>
         <li><a href="week7.html" class="current-page">Week 7</a></li>
         <li><a href="week8.html">Week 8</a></li>
         <li><a href="week9.html">Week 9</a></li>
-        <li><a href="week10.html">week 10</a></li>
+        <li><a href="week10.html">Week 10</a></li>
       </ul>
     </nav>
   </header>
+
 
   <main class="week-page">
     <h1 class="page-title">Week 7</h1>
   </main>
 
+  <!-- OPTIONAL EXPLANATORY TEXT (EDIT OR DELETE IF YOU LIKE) -->
+  <p class="body-text">
+    Below is my encoded MEI score rendered using Verovio, with its metadata displayed above the staff using CETEI.
+  </p>
+
+  
+
+ 
+  <div id="MEImeta"></div>
+
+  <div id="app" class="panel"
+       style="border: 1px solid lightgray; height: 600px; margin: 1rem auto;">
+    Verovio is loading...
+  </div>
+
+
+  <script type="module">
+    import 'https://www.verovio.org/javascript/app/verovio-app.js';
+
+    const app = new Verovio.App(
+      document.getElementById("app"),
+      {} 
+    );
+
+ 
+    fetch("data/Money week 5b.mei")
+      .then(function(response) {
+        return response.text();
+      })
+      .then(function(text) {
+        app.loadData(text);
+      });
+  </script>
+
+
+  <script>
+   
+    var CETEI4MEI = new CETEI();
+    CETEI4MEI.addBehaviors({
+      namespaces: {
+        mei: "http://www.music-encoding.org/ns/mei"
+      }
+    });
+
+    CETEI4MEI.getHTML5("data/Money week 5b.mei", function(data) {
+     
+      var meiHead = data.querySelector('mei-meiHead') || data.querySelector('meiHead');
+      if (meiHead) {
+        document.getElementById("MEImeta").appendChild(meiHead);
+      }
+    });
+  </script>
+
+  <footer class="body-text">
+    <p>
+      Score rendering provided by
+      <a href="http://www.verovio.org">Verovio</a>.
+      Metadata rendered by
+      <a href="https://github.com/TEIC/CETEIcean/">CETEIcean</a>.
+    </p>
+  </footer>
+
 </body>
 </html>
+
